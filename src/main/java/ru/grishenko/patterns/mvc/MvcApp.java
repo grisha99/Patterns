@@ -8,14 +8,14 @@ public class MvcApp {
 
     public static void main(String[] args) {
 
-        Item item = Item.getBuilder().setId(1L).setName("Item1").setPrice(new BigDecimal("125.21")).build();
-        ItemController controller = new ItemController(new ItemView(), item);
+//        Item item = Item.getBuilder().setId(1L).setName("Item1").setPrice(new BigDecimal("125.21")).build();
+        ItemController controller = new ItemController(new ItemView());
 
         controller.updateView();
 
-        item.setName("newItemName");
+//        item.setName("newItemName");
 
-        controller.updateView();
+ //       controller.updateView();
     }
 
 }
